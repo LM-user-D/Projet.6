@@ -3,8 +3,8 @@ const { Schema } = mongoose;
 const validateur = require("mongoose-unique-validator");
 
 const userShema = new Schema({
-    email: { type: String, required: true, unique: true },
-    password: { type: String, required: true },
+  email: { type: String, required: true, unique: true },
+  password: { type: String, required: true },
 });
 
 userShema.plugin(validateur);
