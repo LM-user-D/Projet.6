@@ -7,9 +7,6 @@ exports.creatBooks = (req, res, next) => {
     userId: nvbook.userId,
     title: nvbook.title,
     author: nvbook.author,
-  /*   imageUrl: `${req.protocol}://${req.get("host")}/images/${
-      req.file.filename
-    }` */
     imageUrl: `${req.protocol}://${req.get("host")}/images/${req.imageFilename}`, // Utilise req.imageFilename
     year: nvbook.year,
     genre: nvbook.genre,
